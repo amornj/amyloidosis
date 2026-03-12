@@ -232,10 +232,82 @@ export default function ClassificationPage() {
                     <td className="py-2 px-2">+++</td>
                     <td className="py-2 px-2">Italian</td>
                   </tr>
+                  <tr>
+                    <td className="py-2 px-2 font-bold">Ser77Tyr</td>
+                    <td className="py-2 px-2">&lt;1%</td>
+                    <td className="py-2 px-2">&gt;90%</td>
+                    <td className="py-2 px-2">55</td>
+                    <td className="py-2 px-2">++</td>
+                    <td className="py-2 px-2">++</td>
+                    <td className="py-2 px-2">French, German, American</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-2 font-bold">Glu89Gln</td>
+                    <td className="py-2 px-2">&lt;1%</td>
+                    <td className="py-2 px-2">&gt;90%</td>
+                    <td className="py-2 px-2">55</td>
+                    <td className="py-2 px-2">++</td>
+                    <td className="py-2 px-2">++</td>
+                    <td className="py-2 px-2">Italian</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-2 font-bold">Gly47Glu</td>
+                    <td className="py-2 px-2">&lt;1%</td>
+                    <td className="py-2 px-2">&gt;90%</td>
+                    <td className="py-2 px-2">45</td>
+                    <td className="py-2 px-2">++</td>
+                    <td className="py-2 px-2">+++</td>
+                    <td className="py-2 px-2">Italian, German</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-2 font-bold">Ile84Ser</td>
+                    <td className="py-2 px-2">&lt;1%</td>
+                    <td className="py-2 px-2">Unknown</td>
+                    <td className="py-2 px-2">40</td>
+                    <td className="py-2 px-2">++</td>
+                    <td className="py-2 px-2">+++</td>
+                    <td className="py-2 px-2">Swiss, German</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-2 font-bold">Leu58His</td>
+                    <td className="py-2 px-2">&lt;1%</td>
+                    <td className="py-2 px-2">Unknown</td>
+                    <td className="py-2 px-2">&gt;50</td>
+                    <td className="py-2 px-2">++</td>
+                    <td className="py-2 px-2">+++</td>
+                    <td className="py-2 px-2">German</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-2 font-bold">Ser50Arg</td>
+                    <td className="py-2 px-2">&lt;1%</td>
+                    <td className="py-2 px-2">Unknown</td>
+                    <td className="py-2 px-2">&gt;40</td>
+                    <td className="py-2 px-2">++</td>
+                    <td className="py-2 px-2">+++</td>
+                    <td className="py-2 px-2">Asian, Mexican</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-2 font-bold">Gly47Ala</td>
+                    <td className="py-2 px-2">&lt;1%</td>
+                    <td className="py-2 px-2">Unknown</td>
+                    <td className="py-2 px-2">&gt;40</td>
+                    <td className="py-2 px-2">+</td>
+                    <td className="py-2 px-2">+++</td>
+                    <td className="py-2 px-2">German, Italian, French</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-2 font-bold">Val20Ile</td>
+                    <td className="py-2 px-2">&lt;1%</td>
+                    <td className="py-2 px-2">Unknown</td>
+                    <td className="py-2 px-2">60s</td>
+                    <td className="py-2 px-2">++</td>
+                    <td className="py-2 px-2">+</td>
+                    <td className="py-2 px-2">German</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-gray-500 mt-2">+ = less common; ++ = common; +++ = more common. Note: Phe64Leu variant may cause false-negative Tc-DPD scans.</p>
+            <p className="text-xs text-gray-500 mt-2">+ = less common; ++ = common; +++ = more common. Note: Phe64Leu, Ser77Tyr, Tyr114Cys variants may cause false-negative bone scintigraphy.</p>
           </div>
 
           <div className="card">
@@ -355,6 +427,73 @@ export default function ClassificationPage() {
                   <tr className="bg-yellow-50"><td className="py-2 px-3 font-medium">II</td><td className="py-2 px-3">One above threshold</td><td className="py-2 px-3">10.5&ndash;11.1 months</td></tr>
                   <tr className="bg-red-50"><td className="py-2 px-3 font-medium">III</td><td className="py-2 px-3">Both above threshold</td><td className="py-2 px-3">3.5&ndash;4.1 months</td></tr>
                   <tr className="bg-red-100"><td className="py-2 px-3 font-medium">IIIb</td><td className="py-2 px-3">Stage III + NT-proBNP &ge;8,500 pg/mL</td><td className="py-2 px-3">5 months</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 className="font-bold text-sm text-primary mt-6 mb-2">AL-CM: Revised Mayo 2012 Staging (Adds dFLC)</h3>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="text-left py-2 px-3">Parameter</th>
+                    <th className="text-left py-2 px-3">Threshold</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y">
+                  <tr><td className="py-2 px-3">NT-proBNP</td><td className="py-2 px-3">&ge;1,800 pg/mL</td></tr>
+                  <tr><td className="py-2 px-3">Troponin T</td><td className="py-2 px-3">&ge;25 ng/L</td></tr>
+                  <tr><td className="py-2 px-3">dFLC (involved minus uninvolved)</td><td className="py-2 px-3">&ge;180 mg/L</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="overflow-x-auto mb-6">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="text-left py-2 px-3">Stage</th>
+                    <th className="text-left py-2 px-3">Criteria</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y">
+                  <tr className="bg-green-50"><td className="py-2 px-3 font-medium">I</td><td className="py-2 px-3">All below thresholds</td></tr>
+                  <tr className="bg-yellow-50"><td className="py-2 px-3 font-medium">II</td><td className="py-2 px-3">1 variable above threshold</td></tr>
+                  <tr className="bg-orange-50"><td className="py-2 px-3 font-medium">III</td><td className="py-2 px-3">2 variables above threshold</td></tr>
+                  <tr className="bg-red-50"><td className="py-2 px-3 font-medium">IV</td><td className="py-2 px-3">All 3 above threshold</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 className="font-bold text-sm text-primary mb-2">ATTR-CM: Expanded NAC Staging (Fontana 2025)</h3>
+            <p className="text-xs text-gray-600 mb-2">Applicable to both ATTRwt-CM and ATTRv-CM. Adds a 4th stage for highest-risk patients.</p>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="text-left py-2 px-3">Parameter</th>
+                    <th className="text-left py-2 px-3">Threshold</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y">
+                  <tr><td className="py-2 px-3">NT-proBNP</td><td className="py-2 px-3">3,000 and 10,000 pg/mL</td></tr>
+                  <tr><td className="py-2 px-3">Troponin T</td><td className="py-2 px-3">&ge;50 ng/L</td></tr>
+                  <tr><td className="py-2 px-3">eGFR</td><td className="py-2 px-3">&lt;45 mL/min</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="overflow-x-auto mb-6">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="text-left py-2 px-3">Stage</th>
+                    <th className="text-left py-2 px-3">Criteria</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y">
+                  <tr className="bg-green-50"><td className="py-2 px-3 font-medium">I</td><td className="py-2 px-3">Both variables below cutoffs</td></tr>
+                  <tr className="bg-yellow-50"><td className="py-2 px-3 font-medium">II</td><td className="py-2 px-3">1 variable above cutoff</td></tr>
+                  <tr className="bg-orange-50"><td className="py-2 px-3 font-medium">III</td><td className="py-2 px-3">Both variables above cutoff</td></tr>
+                  <tr className="bg-red-50"><td className="py-2 px-3 font-medium">IV</td><td className="py-2 px-3">NT-proBNP &gt;10,000 regardless of eGFR</td></tr>
                 </tbody>
               </table>
             </div>

@@ -350,6 +350,28 @@ export default function DiagnosisPage() {
                 <li>Tc-99m-MDP (methyl diphosphonate) is <strong>not</strong> an acceptable tracer for ATTR-CM diagnosis</li>
               </ul>
             </div>
+
+            <div className="mt-4">
+              <h3 className="font-bold text-sm text-primary mb-2">False-Negative Scintigraphy: Variant-Specific Pitfalls</h3>
+              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-4">
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li><strong>Ser77Tyr, Tyr114Cys, Phe64Leu</strong> variants can present with disproportionately low or absent myocardial radiotracer uptake despite HF symptoms and characteristic imaging on echo/CMR</li>
+                  <li>These patients do NOT fulfill the nonbiopsy diagnostic criteria</li>
+                  <li>If strong clinical suspicion remains despite no/mild uptake: sequence TTR gene + CMR &rarr; biopsy if needed</li>
+                  <li><strong>Grade 1 uptake in ATTRwt:</strong> May represent early disease, preceding structural and functional cardiac abnormalities &mdash; warrants close follow-up</li>
+                </ul>
+              </div>
+
+              <h3 className="font-bold text-sm text-primary mb-2">Quantitative Scintigraphy &amp; Emerging Nuclear Methods</h3>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li><strong>Heart-to-contralateral (HCL) ratio:</strong> Quantitative measure from planar imaging for Tc-PYP; HCL &gt;1.6 correlates with higher-grade uptake</li>
+                  <li><strong>SPECT/CT:</strong> Preferred over planar alone; enables absolute quantification of uptake and differentiates blood pool from true myocardial signal</li>
+                  <li>In the United States, Tc-PYP is most commonly used; in Europe, Tc-DPD and Tc-HMDP are standard</li>
+                  <li><strong>Emerging:</strong> SUV-based quantification and cardiac amyloid activity (CAA) scores from SPECT/CT are under investigation for tracking disease progression</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       )}
@@ -403,6 +425,64 @@ export default function DiagnosisPage() {
                   <li>Neither necessary nor sufficient for definitive diagnosis alone</li>
                   <li>Very useful to <strong>exclude</strong> amyloidosis in suspected cases</li>
                   <li>Helpful for identifying other diagnoses (sarcoidosis, hemochromatosis, Fabry)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <h2 className="card-header">Advanced CMR: Multiparametric Tissue Characterization</h2>
+            <p className="text-sm text-gray-600 mb-3">CMR mapping techniques have dramatically advanced understanding of cardiac amyloidosis pathophysiology and enable noninvasive quantification of amyloid burden. (Fontana et al. JACC Cardiovasc Imaging 2025)</p>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="text-left py-2 px-3">Technique</th>
+                    <th className="text-left py-2 px-3">What It Measures</th>
+                    <th className="text-left py-2 px-3">Clinical Significance</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y">
+                  <tr>
+                    <td className="py-2 px-3 font-medium">ECV (extracellular volume)</td>
+                    <td className="py-2 px-3">Direct measure of myocardial extracellular expansion</td>
+                    <td className="py-2 px-3">Best surrogate of amyloid burden; independently prognostic even after adjusting for biomarker stage; tracks treatment response</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-3 font-medium">Native T1</td>
+                    <td className="py-2 px-3">Composite signal from intracellular + extracellular space</td>
+                    <td className="py-2 px-3">Elevated in CA; prognostic marker; influenced by edema and amyloid &mdash; less specific than ECV as standalone measure</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-3 font-medium">T2 mapping</td>
+                    <td className="py-2 px-3">Myocardial edema (water content)</td>
+                    <td className="py-2 px-3">Elevated in AL-CM (direct light-chain cytotoxicity causes edema) but NOT typically in ATTR-CM &mdash; may help distinguish types</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-3 font-medium">Stress perfusion</td>
+                    <td className="py-2 px-3">Myocardial blood flow under stress</td>
+                    <td className="py-2 px-3">Severely reduced in CA (similar to triple-vessel CAD); correlates with amyloid infiltration of arterioles</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-blue-50 rounded-lg p-3">
+                <h4 className="font-semibold text-sm text-blue-800 mb-1">CMR Can Now Define 5 Disease Processes</h4>
+                <ol className="text-sm text-gray-700 space-y-1 list-decimal ml-4">
+                  <li>Amyloid burden (ECV)</li>
+                  <li>Edema (T2)</li>
+                  <li>Ischemia (stress perfusion mapping)</li>
+                  <li>Myocyte response (LV mass &times; [1&minus;ECV])</li>
+                  <li>Disease severity (combination of LGE + ECV)</li>
+                </ol>
+              </div>
+              <div className="bg-green-50 rounded-lg p-3">
+                <h4 className="font-semibold text-sm text-green-800 mb-1">Atrial Assessment</h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>Left atrial strain: progressive loss of atrial function from amyloid infiltration</li>
+                  <li>Atrial electromechanical dissociation: loss of atrial contraction even in sinus rhythm</li>
+                  <li>Direct atrial amyloid infiltration contributes to blood stasis and thrombi, independent of rhythm</li>
                 </ul>
               </div>
             </div>

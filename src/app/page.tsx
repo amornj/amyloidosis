@@ -20,7 +20,7 @@ const sections = [
   {
     href: '/treatment',
     title: 'Treatment',
-    desc: 'Tafamidis, TTR silencers, AL-CM therapy, HF management, AF, arrhythmias',
+    desc: 'Tafamidis, acoramidis, gene silencers, gene editing, anti-amyloid antibodies, AL-CM therapy, HF, monitoring',
     icon: '💊',
     color: 'border-red-500',
   },
@@ -46,7 +46,7 @@ const top10 = [
   'Diagnosis requires a high index of suspicion. Many patients see >5 physicians before correct diagnosis. Increased LV wall thickness + HF symptoms should trigger evaluation.',
   'The diagnostic algorithm always starts with a monoclonal protein screen (sFLC + SIFE + UIFE) to assess for AL-CM. Never interpret a Tc-PYP scan without this screen.',
   'Negative monoclonal protein screen + Grade 2/3 uptake on Tc-PYP scintigraphy = noninvasive diagnosis of ATTR-CM (no biopsy needed).',
-  'Tafamidis (TTR stabilizer) is the only FDA-approved treatment for ATTR-CM. Early diagnosis is critical because it delays progression but does not reverse it.',
+  'Tafamidis is the only FDA-approved ATTR-CM treatment, but acoramidis (ATTRibute-CM trial), gene silencers (HELIOS-B), gene editing (NTLA-2001), and anti-amyloid antibodies are expanding the pipeline.',
   'AL-CM treatment is plasma-cell-directed: daratumumab-CyBorD (Dara-CyBorD) has emerged as the standard first-line regimen, with 78.5% deep hematologic responses.',
   'Standard HF therapies (ARNI, BB, SGLT2i) are less well tolerated in cardiac amyloidosis due to restrictive physiology. Volume management with loop diuretics is the mainstay.',
   'Anticoagulation is indicated in AF regardless of CHA2DS2-VASc score due to high thromboembolic risk (intracardiac thrombus up to 33%).',
@@ -61,10 +61,10 @@ export default function HomePage() {
           Cardiac Amyloidosis Clinical Guide
         </h1>
         <p className="text-gray-600 mt-2">
-          Based on the 2023 ACC Expert Consensus Decision Pathway on Comprehensive Multidisciplinary Care for the Patient With Cardiac Amyloidosis
+          Based on the 2023 ACC Expert Consensus Decision Pathway and advances from the last decade in cardiac amyloidosis imaging, diagnosis, and treatment
         </p>
         <p className="text-xs text-gray-400 mt-1">
-          Kittleson MM, Ruberg FL, Ambardekar AV, et al. J Am Coll Cardiol. 2023;81:1076-1126
+          Kittleson MM, et al. J Am Coll Cardiol. 2023;81:1076-1126 &bull; Fontana M, et al. JACC Cardiovasc Imaging. 2025;18:478-499
         </p>
       </div>
 

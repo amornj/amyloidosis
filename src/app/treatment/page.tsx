@@ -9,6 +9,7 @@ const tabs = [
   { id: 'af-arrhythmia', label: 'AF & Arrhythmias' },
   { id: 'advanced-hf', label: 'Advanced HF' },
   { id: 'clinical-trials', label: 'Clinical Trials' },
+  { id: 'monitoring', label: 'Monitoring Response' },
 ]
 
 export default function TreatmentPage() {
@@ -121,13 +122,81 @@ export default function TreatmentPage() {
           </div>
 
           <div className="card">
-            <h2 className="card-header">Emerging Therapies</h2>
-            <div className="bg-gray-50 rounded-lg p-4 text-sm text-gray-700">
-              <ul className="space-y-2">
-                <li><strong>CRISPR-Cas9 gene editing:</strong> Phase 1 data in 6 patients with ATTRv showed durable 87% knockdown of TTR after a single infusion, with no major adverse events at short-term follow-up</li>
-                <li><strong>Anti-fibril antibodies:</strong> Designed to trigger immune system&ndash;mediated amyloid resorption; clinical trials have not yet met study endpoints</li>
-                <li><strong>Combination therapy:</strong> TTR stabilizer + silencer is theoretically synergistic but data are lacking</li>
-              </ul>
+            <h2 className="card-header">Acoramidis (Next-Generation TTR Stabilizer)</h2>
+            <div className="border-l-4 border-green-500 bg-green-50 rounded-r-lg p-4 mb-4">
+              <span className="badge-green">ATTRibute-CM Trial &mdash; Positive Results</span>
+              <div className="mt-2 text-sm text-gray-600">
+                <ul className="space-y-1">
+                  <li><strong>Mechanism:</strong> Binds and stabilizes TTR tetramer (more potent stabilization than tafamidis in vitro)</li>
+                  <li><strong>Dosing:</strong> 800 mg orally twice daily</li>
+                  <li><strong>ATTRibute-CM trial:</strong> Favorable win ratio for hierarchical composite of all-cause mortality, CV hospitalizations, NT-proBNP change, and 6MWD change</li>
+                  <li>Also showed reduced rates of 6MWD and KCCQ decline vs placebo</li>
+                  <li>FDA review pending; may provide an additional approved option for ATTR-CM</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 className="font-bold text-sm text-primary mb-2">Eplontersen (Antisense Oligonucleotide)</h3>
+            <div className="border-l-4 border-blue-500 bg-blue-50 rounded-r-lg p-4 mb-4">
+              <span className="badge-blue">Approved for ATTRv Polyneuropathy</span>
+              <div className="mt-2 text-sm text-gray-600">
+                <ul className="space-y-1">
+                  <li><strong>Dosing:</strong> 45 mg SC monthly (convenient self-injection)</li>
+                  <li>NEURO-TTRansform: efficacy in ATTRv polyneuropathy</li>
+                  <li>Post hoc analysis: improvements in LV end-diastolic volume, stroke volume, and E/e&apos;</li>
+                  <li>CARDIO-TTRansform: Phase 3 trial assessing CV mortality + recurrent CV events in ATTR-CM (n &gt;1,400)</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 className="font-bold text-sm text-primary mb-2">Gene Editing (NTLA-2001 / CRISPR-Cas9)</h3>
+            <div className="border-l-4 border-orange-500 bg-orange-50 rounded-r-lg p-4 mb-4">
+              <span className="badge-yellow">Phase 3 &mdash; MAGNITUDE Trial</span>
+              <div className="mt-2 text-sm text-gray-600">
+                <ul className="space-y-1">
+                  <li>CRISPR-Cas9 technology permanently edits TTR gene &mdash; single IV infusion</li>
+                  <li>Phase 1: sustained 87% mean TTR knockdown at day 28; safe and well-tolerated</li>
+                  <li>MAGNITUDE trial (NCT06128629): Phase 3 assessing CV mortality + CV events in ATTR-CM</li>
+                  <li>Serial CMR scans used to track changes in cardiac structure, function, and ECV</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 className="font-bold text-sm text-primary mb-2">Anti-Amyloid Therapies (Fibril Removal)</h3>
+            <div className="border-l-4 border-red-500 bg-red-50 rounded-r-lg p-4">
+              <span className="badge-red">Investigational</span>
+              <p className="text-sm text-gray-600 mt-2 mb-2">A new class of agents designed to actively remove amyloid fibrils already deposited in the myocardium &mdash; addressing a critical unmet need, especially in advanced disease.</p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-xs">
+                  <thead>
+                    <tr className="bg-red-800 text-white">
+                      <th className="text-left py-2 px-2">Agent</th>
+                      <th className="text-left py-2 px-2">Mechanism</th>
+                      <th className="text-left py-2 px-2">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y bg-white">
+                    <tr>
+                      <td className="py-2 px-2 font-medium">NI006 (ALXN2220)</td>
+                      <td className="py-2 px-2">Anti-ATTR monoclonal IgG1 antibody; promotes macrophage-mediated fibril clearance</td>
+                      <td className="py-2 px-2">Phase 1: safe; higher doses reduced NT-proBNP, troponin, and myocardial ECV. Phase 3 planned for ATTR-CM.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 px-2 font-medium">PRX004 (Coramitug)</td>
+                      <td className="py-2 px-2">Humanized IgG4 antibody binding ATTR amyloid</td>
+                      <td className="py-2 px-2">Phase 1: safe in 21 patients; echocardiographic GLS improvement noted. Phase 3 planned.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 px-2 font-medium">AT-02</td>
+                      <td className="py-2 px-2">Pan-amyloid fusion protein; stimulates immunologic amyloid removal (all amyloid types)</td>
+                      <td className="py-2 px-2">Phase 1 ongoing (NCT05951049) using serial CMR with ECV mapping</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="mt-2 p-2 bg-yellow-100 rounded text-xs text-yellow-800">
+                <strong>Clinical Pearl:</strong> Spontaneous antibody-mediated amyloid removal with reversion to near-normal cardiac structure/function has been documented (confirmed by CMR regression of LGE and ECV), providing proof of concept for this therapeutic approach.
+              </div>
             </div>
           </div>
         </div>
@@ -416,52 +485,203 @@ export default function TreatmentPage() {
       {treatmentTab === 'clinical-trials' && (
         <div className="space-y-4">
           <div className="card">
-            <h2 className="card-header">Phase 3 Clinical Trials in ATTR-CM (Table 2)</h2>
+            <h2 className="card-header">ATTR-CM Disease-Modifying Therapy Pipeline</h2>
             <p className="text-sm text-gray-600 mb-4">
-              Access to clinical trials is an important reason to refer to a cardiac amyloid specialist, particularly for ATTR-CM where tafamidis is the only approved agent.
+              Refer to cardiac amyloid specialist for clinical trial access. Landscape has expanded dramatically since 2023.
             </p>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
+
+            <h3 className="font-bold text-sm text-primary mb-2">TTR Stabilizers</h3>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full text-xs">
                 <thead>
                   <tr className="bg-primary text-white">
-                    <th className="text-left py-2 px-3">Trial</th>
-                    <th className="text-left py-2 px-3">Agent</th>
-                    <th className="text-left py-2 px-3">Type</th>
-                    <th className="text-left py-2 px-3">Endpoints</th>
-                    <th className="text-left py-2 px-3">Status</th>
+                    <th className="text-left py-2 px-2">Drug</th>
+                    <th className="text-left py-2 px-2">Route / Dose</th>
+                    <th className="text-left py-2 px-2">Approval</th>
+                    <th className="text-left py-2 px-2">Key Trial</th>
+                    <th className="text-left py-2 px-2">Outcomes</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y">
                   <tr>
-                    <td className="py-2 px-3 font-medium">ATTRIBUTE-CM</td>
-                    <td className="py-2 px-3">Acoramidis</td>
-                    <td className="py-2 px-3">TTR stabilizer</td>
-                    <td className="py-2 px-3">All-cause mortality, CV hospitalization, 6MWD</td>
-                    <td className="py-2 px-3">Completed 2020</td>
+                    <td className="py-2 px-2 font-medium">Diflunisal</td>
+                    <td className="py-2 px-2">Oral 250 mg BID</td>
+                    <td className="py-2 px-2">Off-label (NSAID)</td>
+                    <td className="py-2 px-2">Retrospective studies</td>
+                    <td className="py-2 px-2">Association with reduced mortality; stabilizes GLS. Avoid eGFR &lt;45.</td>
                   </tr>
-                  <tr>
-                    <td className="py-2 px-3 font-medium">CARDIO-TTRansform</td>
-                    <td className="py-2 px-3">Eplontersen</td>
-                    <td className="py-2 px-3">Antisense oligonucleotide</td>
-                    <td className="py-2 px-3">CV mortality + recurrent CV events to week 140</td>
-                    <td className="py-2 px-3">Completed mid-2022</td>
+                  <tr className="bg-green-50">
+                    <td className="py-2 px-2 font-medium">Tafamidis</td>
+                    <td className="py-2 px-2">Oral 61 mg or 80 mg daily</td>
+                    <td className="py-2 px-2 font-semibold">FDA-approved (ATTR-CM + ATTR-PN)</td>
+                    <td className="py-2 px-2">ATTR-ACT</td>
+                    <td className="py-2 px-2">Reduced all-cause mortality + CV hospitalizations. Mortality benefit to 58 months.</td>
                   </tr>
-                  <tr>
-                    <td className="py-2 px-3 font-medium">HELIOS-B</td>
-                    <td className="py-2 px-3">Vutrisiran</td>
-                    <td className="py-2 px-3">Small interfering RNA</td>
-                    <td className="py-2 px-3">All-cause mortality, recurrent CV events at 30&ndash;36 mo</td>
-                    <td className="py-2 px-3">Completed Aug 2021</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2 px-3 font-medium">APOLLO-B</td>
-                    <td className="py-2 px-3">Patisiran</td>
-                    <td className="py-2 px-3">Small interfering RNA</td>
-                    <td className="py-2 px-3">6MWD at 12 months</td>
-                    <td className="py-2 px-3">Met 12-mo primary endpoint (6MWD improvement)</td>
+                  <tr className="bg-green-50">
+                    <td className="py-2 px-2 font-medium">Acoramidis</td>
+                    <td className="py-2 px-2">Oral 800 mg BID</td>
+                    <td className="py-2 px-2 font-semibold">FDA review pending</td>
+                    <td className="py-2 px-2">ATTRibute-CM</td>
+                    <td className="py-2 px-2">Favorable hierarchical composite; reduced mortality, CV hospitalization, NT-proBNP, 6MWD decline.</td>
                   </tr>
                 </tbody>
               </table>
+            </div>
+
+            <h3 className="font-bold text-sm text-primary mb-2">Gene Silencers &amp; Gene Editing</h3>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full text-xs">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="text-left py-2 px-2">Drug</th>
+                    <th className="text-left py-2 px-2">Type / Route</th>
+                    <th className="text-left py-2 px-2">Approval</th>
+                    <th className="text-left py-2 px-2">Cardiac Trial</th>
+                    <th className="text-left py-2 px-2">Cardiac Outcomes</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y">
+                  <tr>
+                    <td className="py-2 px-2 font-medium">Patisiran</td>
+                    <td className="py-2 px-2">siRNA; IV q3wk</td>
+                    <td className="py-2 px-2">ATTR-PN only</td>
+                    <td className="py-2 px-2">APOLLO-B</td>
+                    <td className="py-2 px-2">Met 12-mo primary (6MWD). FDA declined ATTR-CM approval (small effect size). Post hoc: reduced LV mass and wall thickness.</td>
+                  </tr>
+                  <tr className="bg-blue-50">
+                    <td className="py-2 px-2 font-medium">Vutrisiran</td>
+                    <td className="py-2 px-2">siRNA; 25 mg SC q3mo</td>
+                    <td className="py-2 px-2">ATTR-PN only</td>
+                    <td className="py-2 px-2">HELIOS-B</td>
+                    <td className="py-2 px-2 font-semibold">Reduced composite of all-cause mortality + recurrent CV events in overall and monotherapy populations.</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-2 font-medium">Eplontersen</td>
+                    <td className="py-2 px-2">ASO; 45 mg SC monthly</td>
+                    <td className="py-2 px-2">ATTR-PN only</td>
+                    <td className="py-2 px-2">CARDIO-TTRansform</td>
+                    <td className="py-2 px-2">Phase 3 (n &gt;1,400); CV mortality + recurrent CV events. Post hoc: improved stroke volume and EF.</td>
+                  </tr>
+                  <tr className="bg-orange-50">
+                    <td className="py-2 px-2 font-medium">NTLA-2001</td>
+                    <td className="py-2 px-2">CRISPR gene edit; single IV</td>
+                    <td className="py-2 px-2">Investigational</td>
+                    <td className="py-2 px-2">MAGNITUDE</td>
+                    <td className="py-2 px-2">Phase 3: CV mortality + CV events. Single infusion permanently edits TTR gene. 87% TTR knockdown.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 className="font-bold text-sm text-primary mb-2">Anti-Amyloid Antibodies (Fibril Removal)</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="text-left py-2 px-2">Drug</th>
+                    <th className="text-left py-2 px-2">Mechanism</th>
+                    <th className="text-left py-2 px-2">Stage</th>
+                    <th className="text-left py-2 px-2">Key Findings</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y">
+                  <tr>
+                    <td className="py-2 px-2 font-medium">NI006</td>
+                    <td className="py-2 px-2">Anti-ATTR IgG1 antibody</td>
+                    <td className="py-2 px-2">Phase 1 &rarr; Phase 3 planned</td>
+                    <td className="py-2 px-2">Safe; higher doses reduced NT-proBNP, troponin, myocardial ECV</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-2 font-medium">PRX004</td>
+                    <td className="py-2 px-2">Anti-ATTR IgG4 antibody</td>
+                    <td className="py-2 px-2">Phase 1 &rarr; Phase 3 planned</td>
+                    <td className="py-2 px-2">Safe; improved GLS in evaluable patients</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-2 font-medium">AT-02</td>
+                    <td className="py-2 px-2">Pan-amyloid fusion protein</td>
+                    <td className="py-2 px-2">Phase 1 ongoing</td>
+                    <td className="py-2 px-2">Stimulates immunologic removal of all amyloid types</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {treatmentTab === 'monitoring' && (
+        <div className="space-y-4">
+          <div className="card">
+            <h2 className="card-header">Monitoring Disease Progression &amp; Treatment Response</h2>
+            <p className="text-sm text-gray-600 mb-4">
+              Imaging-based markers that more accurately reflect amyloid burden are refining prognostic stratification beyond biomarkers alone. (Fontana et al. JACC Cardiovasc Imaging. 2025;18:478&ndash;499)
+            </p>
+
+            <h3 className="font-bold text-sm text-primary mb-2">ATTR-CM: Markers of Disease Progression</h3>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="text-left py-2 px-3">Marker</th>
+                    <th className="text-left py-2 px-3">Progression Defined As</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y">
+                  <tr><td className="py-2 px-3 font-medium">NT-proBNP</td><td className="py-2 px-3">Increase of &gt;700 ng/L and &gt;30% from baseline</td></tr>
+                  <tr><td className="py-2 px-3 font-medium">Loop diuretic dose</td><td className="py-2 px-3">Outpatient diuretic intensification (initiation or dose increase)</td></tr>
+                  <tr><td className="py-2 px-3 font-medium">6-minute walk distance</td><td className="py-2 px-3">Absolute decrease &gt;35 m or relative decrease &gt;5%</td></tr>
+                  <tr><td className="py-2 px-3 font-medium">KCCQ</td><td className="py-2 px-3">Worsening of Kansas City Cardiomyopathy Questionnaire score</td></tr>
+                  <tr><td className="py-2 px-3 font-medium">Mitral / tricuspid regurgitation</td><td className="py-2 px-3">Worsening of regurgitation grade</td></tr>
+                  <tr><td className="py-2 px-3 font-medium">Stroke volume</td><td className="py-2 px-3">Reduction in stroke volume (independently prognostic)</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 className="font-bold text-sm text-primary mb-2">AL-CM: Treatment Response Markers</h3>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="text-left py-2 px-3">Marker</th>
+                    <th className="text-left py-2 px-3">Response Defined As</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y">
+                  <tr><td className="py-2 px-3 font-medium">NT-proBNP</td><td className="py-2 px-3">Decrease of &gt;300 ng/L and &gt;30% from baseline</td></tr>
+                  <tr><td className="py-2 px-3 font-medium">Longitudinal strain (GLS)</td><td className="py-2 px-3">Improvement &ge;2% (independently associated with reduced mortality)</td></tr>
+                  <tr><td className="py-2 px-3 font-medium">Native T1 (CMR)</td><td className="py-2 px-3">Reduction &ge;50 ms (reflects amyloid burden + edema changes)</td></tr>
+                  <tr><td className="py-2 px-3 font-medium">Extracellular volume (CMR)</td><td className="py-2 px-3">Reduction &ge;5% (direct surrogate of amyloid burden; independently prognostic)</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="card">
+            <h2 className="card-header">Advanced Imaging for Disease Tracking</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-blue-50 rounded-lg p-4">
+                <h3 className="font-bold text-sm text-blue-800 mb-2">CMR Multiparametric Mapping</h3>
+                <ul className="text-sm space-y-1 text-gray-700">
+                  <li><strong>ECV:</strong> Direct measure of myocardial extracellular expansion; best surrogate of amyloid burden</li>
+                  <li><strong>Native T1:</strong> Composite signal (amyloid + edema); independently prognostic but less specific than ECV</li>
+                  <li><strong>T2 mapping:</strong> Surrogate for myocardial edema; elevated in AL-CM (cytotoxic light chains) but not ATTR-CM</li>
+                  <li><strong>LGE transmurality:</strong> Transmural LGE associated with 4-fold higher mortality risk</li>
+                  <li>CMR can now define: amyloid burden (ECV), edema (T2), ischemia (perfusion mapping), myocyte response (LV mass &times; [1&minus;ECV])</li>
+                </ul>
+              </div>
+              <div className="bg-purple-50 rounded-lg p-4">
+                <h3 className="font-bold text-sm text-purple-800 mb-2">Emerging: Cardiac PET Tracers</h3>
+                <ul className="text-sm space-y-1 text-gray-700">
+                  <li><strong>&sup1;&sup8;F-florbetapir:</strong> Detects both AL-CA and ATTR-CA; higher/persistent uptake in AL vs ATTR; can detect RV and extracardiac infiltration</li>
+                  <li><strong>&sup1;&sup2;&sup4;I-evuzamitide:</strong> Pan-amyloid tracer; may be superior for ATTR-CA; detects hepatic and renal amyloid</li>
+                  <li><strong>Status:</strong> Investigational &mdash; not FDA-approved or reimbursed for cardiac imaging</li>
+                  <li><strong>Promise:</strong> May enable early detection before structural/functional changes and track treatment response</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-3 p-2 bg-yellow-50 border border-yellow-200 rounded text-xs text-yellow-800">
+              <strong>Clinical Pearl:</strong> In AL-CM, patients who achieve complete hematologic response and GLS improvement &ge;2% have independently reduced mortality. CMR ECV changes remain prognostic even after adjusting for NT-proBNP and hematologic response.
             </div>
           </div>
         </div>

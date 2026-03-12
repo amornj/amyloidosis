@@ -1,7 +1,7 @@
 # Cardiac Amyloidosis — Development Guide
 
 ## Project Overview
-Clinician-facing Next.js app encoding the **2023 ACC Expert Consensus Decision Pathway on Comprehensive Multidisciplinary Care for the Patient With Cardiac Amyloidosis** (Kittleson MM, Ruberg FL, et al. J Am Coll Cardiol. 2023;81:1076-1126).
+Clinician-facing Next.js app encoding the **2023 ACC Expert Consensus Decision Pathway on Comprehensive Multidisciplinary Care for the Patient With Cardiac Amyloidosis** (Kittleson MM, Ruberg FL, et al. J Am Coll Cardiol. 2023;81:1076-1126), enriched with advances from **The Last Decade in Cardiac Amyloidosis** (Fontana M, et al. JACC Cardiovasc Imaging. 2025;18:478-499).
 
 ## Tech Stack
 - Next.js 14+ (App Router), TypeScript, Tailwind CSS
@@ -17,7 +17,7 @@ Clinician-facing Next.js app encoding the **2023 ACC Expert Consensus Decision P
 | `/` | Home — amyloidosis overview, top 10 messages, 3-step pathway, section cards |
 | `/diagnosis` | 6 tabs: red-flags, algorithm, monoclonal, scintigraphy, imaging, biopsy |
 | `/classification` | 4 tabs: overview (AL vs ATTR), ttr-variants, staging, rare |
-| `/treatment` | 6 tabs: attr-cm, al-cm, hf-management, af-arrhythmia, advanced-hf, clinical-trials |
+| `/treatment` | 7 tabs: attr-cm, al-cm, hf-management, af-arrhythmia, advanced-hf, clinical-trials, monitoring |
 | `/specialists` | 6 tabs: genetics, neurology, gi, hematology, nephrology, palliative |
 | `/ask` | AI chat with NotebookLM proxy |
 

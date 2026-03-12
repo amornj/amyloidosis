@@ -1,12 +1,12 @@
 # Cardiac Amyloidosis Clinical Guide
 
-Clinician-facing web application based on the **2023 ACC Expert Consensus Decision Pathway on Comprehensive Multidisciplinary Care for the Patient With Cardiac Amyloidosis** (Kittleson MM, Ruberg FL, et al. J Am Coll Cardiol. 2023;81:1076-1126).
+Clinician-facing web application based on the **2023 ACC Expert Consensus Decision Pathway on Comprehensive Multidisciplinary Care for the Patient With Cardiac Amyloidosis** (Kittleson MM, Ruberg FL, et al. J Am Coll Cardiol. 2023;81:1076-1126), enriched with advances from **The Last Decade in Cardiac Amyloidosis** (Fontana M, et al. JACC Cardiovasc Imaging. 2025;18:478-499).
 
 ## Features
 
-- **Diagnosis** — Red flags, diagnostic algorithm, monoclonal protein screen, bone scintigraphy, echo/CMR, biopsy
-- **Classification** — AL-CM vs ATTR-CM comparison, TTR variant table, staging systems (Mayo, UK, Boston)
-- **Treatment** — Tafamidis, TTR silencers, AL-CM therapy (Dara-CyBorD), HF management, AF/arrhythmias, advanced HF
+- **Diagnosis** — Red flags, diagnostic algorithm, monoclonal protein screen, bone scintigraphy (incl. variant-specific false negatives, quantitative methods), advanced CMR multiparametric mapping, biopsy
+- **Classification** — AL-CM vs ATTR-CM comparison, expanded TTR variant table (15 variants), staging systems (Mayo 2004, Mayo 2012, UK, Expanded NAC)
+- **Treatment** — Tafamidis, acoramidis, gene silencers (patisiran, vutrisiran, eplontersen), CRISPR gene editing (NTLA-2001), anti-amyloid antibodies (NI006, PRX004, AT-02), AL-CM therapy, HF management, AF/arrhythmias, advanced HF, disease monitoring & response tracking
 - **Specialist Collaboration** — Genetics, neurology, GI, hematology, nephrology, palliative care
 - **Ask NotebookLM** — AI-powered Q&A on the full ECDP guideline
 
