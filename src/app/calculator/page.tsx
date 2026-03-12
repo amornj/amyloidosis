@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import { useAppStore } from '@/store/appStore'
+import KCCQ12Calculator from '@/components/KCCQ12Calculator'
 
 // ─── T-Amylo Prediction Model & Score ───────────────────────────────────
 // Source: Arana-Achaga X, Goena-Vives C, et al. Development and Validation of
@@ -108,7 +110,12 @@ const riskConfig: Record<RiskCategory, { label: string; color: string; bg: strin
   },
 }
 
-export default function CalculatorPage() {
+const calculatorTabs = [
+  { id: 't-amylo', label: 'T-Amylo', description: 'ATTR-CA prediction' },
+  { id: 'kccq-12', label: 'KCCQ-12', description: 'HF health status' },
+]
+
+function TAmyloCalculator() {
   const [age, setAge] = useState('')
   const [male, setMale] = useState<boolean | null>(null)
   const [carpalTunnel, setCarpalTunnel] = useState<boolean | null>(null)
@@ -590,6 +597,32 @@ export default function CalculatorPage() {
         It does not replace clinical judgment. Always verify findings with appropriate diagnostic testing
         and consider the full clinical picture. Not for direct patient care decisions without physician oversight.
       </div>
+    </div>
+  )
+}
+
+export default function CalculatorPage() {
+  const { calculatorTab, setCalculatorTab } = useAppStore()
+
+  return (
+    <div>
+      {/* Tab Navigation */}
+      <div className="flex gap-2 mb-6 border-b border-gray-200 pb-3 overflow-x-auto">
+        {calculatorTabs.map((tab) => (
+          <button
+            key={tab.id}
+            onClick={() => setCalculatorTab(tab.id)}
+            className={`tab-btn whitespace-nowrap ${calculatorTab === tab.id ? 'active' : ''}`}
+          >
+            <span>{tab.label}</span>
+            <span className="hidden sm:inline text-xs opacity-70 ml-1">— {tab.description}</span>
+          </button>
+        ))}
+      </div>
+
+      {/* Tab Content */}
+      {calculatorTab === 't-amylo' && <TAmyloCalculator />}
+      {calculatorTab === 'kccq-12' && <KCCQ12Calculator />}
     </div>
   )
 }

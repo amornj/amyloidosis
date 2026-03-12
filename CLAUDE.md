@@ -19,11 +19,12 @@ Clinician-facing Next.js app encoding the **2023 ACC Expert Consensus Decision P
 | `/classification` | 4 tabs: overview (AL vs ATTR), ttr-variants, staging, rare |
 | `/treatment` | 7 tabs: attr-cm, al-cm, hf-management, af-arrhythmia, advanced-hf, clinical-trials, monitoring |
 | `/specialists` | 6 tabs: genetics, neurology, gi, hematology, nephrology, palliative |
-| `/calculator` | T-Amylo score: ATTR-CA prediction model + simplified score (Arana-Achaga 2023) |
+| `/calculator` | 2 tabs: T-Amylo ATTR-CA prediction (Arana-Achaga 2023), KCCQ-12 HF health status (Spertus 2015) |
 | `/ask` | AI chat with NotebookLM proxy |
 
 ### Key Files
-- `src/store/appStore.ts` — Zustand store with 4 tab states + resetAll
+- `src/store/appStore.ts` — Zustand store with 5 tab states + resetAll
+- `src/components/KCCQ12Calculator.tsx` — KCCQ-12 questionnaire, scoring, and interpretation
 - `src/store/chatStore.ts` — Chat messages, mode, conversation tracking
 - `src/components/Navigation.tsx` — Sidebar (desktop) / hamburger drawer (mobile)
 - `src/app/api/notebooklm/route.ts` — Proxy to NotebookLM (notebook ID: ed0570ad-3df5-4652-b155-2e7494ceca8a)

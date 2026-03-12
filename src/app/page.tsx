@@ -33,8 +33,8 @@ const sections = [
   },
   {
     href: '/calculator',
-    title: 'T-Amylo Calculator',
-    desc: 'ATTR-CA risk prediction: simplified score and full logistic regression model',
+    title: 'Calculators',
+    desc: 'T-Amylo ATTR-CA risk prediction, KCCQ-12 heart failure health status assessment',
     icon: '🧮',
     color: 'border-amber-500',
   },

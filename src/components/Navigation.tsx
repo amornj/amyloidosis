@@ -12,7 +12,7 @@ const navItems = [
   { href: '/classification', label: 'Classification', icon: '🧬' },
   { href: '/treatment', label: 'Treatment', icon: '💊' },
   { href: '/specialists', label: 'Specialists', icon: '👥' },
-  { href: '/calculator', label: 'Calculator', icon: '🧮' },
+  { href: '/calculator', label: 'Calculators', icon: '🧮' },
   { href: '/ask', label: 'Ask NotebookLM', icon: '🤖' },
 ]
 

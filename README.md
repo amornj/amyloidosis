@@ -8,7 +8,7 @@ Clinician-facing web application based on the **2023 ACC Expert Consensus Decisi
 - **Classification** — AL-CM vs ATTR-CM comparison, expanded TTR variant table (15 variants), staging systems (Mayo 2004, Mayo 2012, UK, Expanded NAC)
 - **Treatment** — Tafamidis, acoramidis, gene silencers (patisiran, vutrisiran, eplontersen), CRISPR gene editing (NTLA-2001), anti-amyloid antibodies (NI006, PRX004, AT-02), AL-CM therapy, HF management, AF/arrhythmias, advanced HF, disease monitoring & response tracking
 - **Specialist Collaboration** — Genetics, neurology, GI, hematology, nephrology, palliative care
-- **T-Amylo Calculator** — ATTR-CA risk prediction with both the full logistic regression model and simplified T-AMYLO point score (Arana-Achaga et al. JACC Cardiovasc Imaging. 2023)
+- **Calculators** — T-Amylo ATTR-CA risk prediction (full logistic regression model + simplified T-AMYLO point score; Arana-Achaga et al. 2023) and KCCQ-12 heart failure health status assessment (4-domain + overall summary score; Spertus & Jones 2015)
 - **Ask NotebookLM** — AI-powered Q&A on the full ECDP guideline
 
 ## Tech Stack
