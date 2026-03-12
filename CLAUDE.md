@@ -19,6 +19,7 @@ Clinician-facing Next.js app encoding the **2023 ACC Expert Consensus Decision P
 | `/classification` | 4 tabs: overview (AL vs ATTR), ttr-variants, staging, rare |
 | `/treatment` | 7 tabs: attr-cm, al-cm, hf-management, af-arrhythmia, advanced-hf, clinical-trials, monitoring |
 | `/specialists` | 6 tabs: genetics, neurology, gi, hematology, nephrology, palliative |
+| `/calculator` | T-Amylo score: ATTR-CA prediction model + simplified score (Arana-Achaga 2023) |
 | `/ask` | AI chat with NotebookLM proxy |
 
 ### Key Files

@@ -32,6 +32,13 @@ const sections = [
     color: 'border-blue-500',
   },
   {
+    href: '/calculator',
+    title: 'T-Amylo Calculator',
+    desc: 'ATTR-CA risk prediction: simplified score and full logistic regression model',
+    icon: '🧮',
+    color: 'border-amber-500',
+  },
+  {
     href: '/ask',
     title: 'Ask NotebookLM',
     desc: 'AI-powered Q&A on the 2023 ACC Cardiac Amyloidosis ECDP',
