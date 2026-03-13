@@ -17,6 +17,13 @@ const images = [
     description:
       'Semiquantitative and quantitative interpretation of ⁹⁹ᵐTc-pyrophosphate scintigraphy. Top: planar 3-hour images with visual grading (Grade 0–3). Middle: heart-to-contralateral lung (H/CL) ratios. Bottom: gray-scale and color SPECT images confirming myocardial uptake.',
   },
+  {
+    src: '/images/cmr-lge-progression.jpg',
+    alt: 'CMR late gadolinium enhancement progression: No LGE to subendocardial LGE to transmural LGE over time',
+    title: 'CMR Late Gadolinium Enhancement Progression',
+    description:
+      'Cardiac MRI short-axis views demonstrating the temporal progression of late gadolinium enhancement (LGE) in cardiac amyloidosis. Left: normal myocardium with no LGE. Center: subendocardial LGE pattern (arrows) indicating early amyloid infiltration. Right: transmural LGE reflecting advanced disease with diffuse amyloid deposition throughout the myocardial wall. This progression from no enhancement → subendocardial → transmural correlates with increasing amyloid burden and worsening prognosis.',
+  },
 ]
 
 export default function KeyImagesPage() {
