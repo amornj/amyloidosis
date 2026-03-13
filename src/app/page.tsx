@@ -39,6 +39,13 @@ const sections = [
     color: 'border-amber-500',
   },
   {
+    href: '/key-images',
+    title: 'Key Images',
+    desc: 'Echo red flags, PYP scintigraphy grading, CMR LGE progression',
+    icon: '🖼️',
+    color: 'border-cyan-500',
+  },
+  {
     href: '/ask',
     title: 'Ask NotebookLM',
     desc: 'AI-powered Q&A on the 2023 ACC Cardiac Amyloidosis ECDP',
